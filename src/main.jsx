@@ -8,19 +8,19 @@ const products = [
     title: 'Creative Calm Workbook',
     price: '$9',
     description: '30 guided art wellness exercises for stress relief, reflection, and mindful creativity.',
-    tag: 'Best starter product'
+   
   },
   {
     title: 'Printable Wellness Bundle',
     price: '$15',
     description: 'Mood trackers, creative journaling pages, coloring sheets, and weekly planning printables.',
-    tag: 'Best value'
+
   },
   {
     title: 'Color Mood Journal',
     price: '$7',
     description: 'A printable journal for tracking emotions through color, symbols, and short reflections.',
-    tag: 'Low-cost entry'
+    
   }
 ];
 
@@ -98,8 +98,15 @@ function Shop() {
     <section id="shop" className="section muted">
       <div className="section-heading">
         <p className="eyebrow">Digital shop</p>
-        <h2>Products ready to sell</h2>
-        <p>Add Gumroad, Payhip, Etsy, or Stripe links to the buttons when you are ready.</p>
+        <h2>Downloads</h2>
+        <a
+  href="https://www.etsy.com/shop/CalmCanvastherapShop?ref=seller-platform-mcnav"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="button primary"
+>
+  Visit Etsy Shop
+</a>
       </div>
       <div className="grid three">
         {products.map(product => (
