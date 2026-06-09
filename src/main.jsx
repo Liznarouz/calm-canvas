@@ -198,27 +198,35 @@ function About() {
 
 function Contact() {
   return (
-       <div style={{display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap"}}>
-      <a
-        className="button secondary"
-        href="mailto:calmcanvastherapy@gmail.com"
-      >
-        calmcanvastherapy@gmail.com
-      </a>
+    <section id="contact" className="section">
+      <div className="contact-card">
+        <ShoppingBag />
+        <h2>Connect With Calm Canvas</h2>
+        <p>
+          Questions, collaborations, or custom wellness resources? Reach out by
+          email or browse our Etsy shop.
+        </p>
 
-      <a
-        className="button primary"
-        href="https://www.etsy.com/shop/CalmCanvastherapShop?ref=seller-platform-mcnav"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Visit Etsy Shop
-      </a>
-    </div>
-  </div>
-</section>
+        <div className="contact-actions">
+          <a
+            className="button secondary"
+            href="mailto:calmcanvastherapy@gmail.com"
+          >
+            calmcanvastherapy@gmail.com
+          </a>
 
-);
+          <a
+            className="button primary"
+            href="https://www.etsy.com/shop/CalmCanvastherapShop?ref=seller-platform-mcnav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Etsy Shop
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 function Footer() {
